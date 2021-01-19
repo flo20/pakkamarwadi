@@ -20,11 +20,15 @@
     padding-bottom: 5vh;
 
     h4 {
-      font-size: 30px;
-      font-weight: 700;
+      font-size: 35px;
+      font-weight: 600;
     }
     p {
       margin-bottom: 2vh;
+      text-align: center;
+      width: 70%;
+      font-size: 16px;
+      color: "#8492a6" !important;
     }
     .cardContainer {
       width: 100%;
@@ -74,10 +78,18 @@
           padding: 20px;
           height: 100%;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
-          justify-content: center;
+          justify-content: space-evenly;
           cursor: pointer;
+          a {
+            color: $color3;
+            font-size: 20px;
+            font-weight: 800;
+            &:hover {
+              color: $color;
+            }
+          }
         }
 
         .container:hover .overlay {

@@ -3,7 +3,14 @@ import "../style/component/_experties.scss";
 import { Card, Progress } from "antd";
 import { Html5Outlined, BoldOutlined } from "@ant-design/icons";
 import { color } from "../constants";
-
+import Mongodb from "../assets/m.jpeg";
+import Express from "../assets/e.jpeg";
+import ReactJs from "../assets/r.jpeg";
+import Node from "../assets/n.jpeg";
+import Js from "../assets/js.jpg";
+import Rn from "../assets/rn.png";
+import Sass from "../assets/sass.png";
+import Boots from "../assets/bootstrap.png";
 export default class Experties extends Component {
   constructor() {
     super();
@@ -12,7 +19,7 @@ export default class Experties extends Component {
         {
           id: 1,
           name: "MongoDB",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
+          icon: Mongodb,
           percent: "80",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
@@ -21,15 +28,15 @@ export default class Experties extends Component {
         {
           id: 2,
           name: "Express",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
-          percent: "90",
+          icon: Express,
+          percent: "80",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
         {
           id: 3,
           name: "React",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
+          icon: ReactJs,
           percent: "90",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
@@ -37,8 +44,8 @@ export default class Experties extends Component {
         {
           id: 4,
           name: "Node",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
-          percent: "90",
+          icon: Node,
+          percent: "80",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
@@ -46,8 +53,8 @@ export default class Experties extends Component {
         {
           id: 5,
           name: "JAVASCRIPT",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
-          percent: "80",
+          icon: Js,
+          percent: "90",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
@@ -55,8 +62,8 @@ export default class Experties extends Component {
         {
           id: 6,
           name: "REACT NATIVE",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
-          percent: "90",
+          icon: Rn,
+          percent: "80",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
@@ -64,17 +71,16 @@ export default class Experties extends Component {
         {
           id: 7,
           name: "SASS",
-          icon: <Html5Outlined style={{ fontSize: 30, color }} />,
-          percent: "70",
+          icon: Sass,
+          percent: "60",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
         {
           id: 8,
           name: "BOOTSTRAP",
-          icon: <BoldOutlined style={{ fontSize: 30, color }} />,
-
-          percent: "90",
+          icon: Boots,
+          percent: "80",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
@@ -83,7 +89,7 @@ export default class Experties extends Component {
         // {
         //   id: 1,
         //   name: "HTML",
-        //   icon: <Html5Outlined style={{ fontSize: 30, color }} />,
+        //             icon: Mongodb
         //   percent: "90",
         //   desc:
         //     "With lots of unique blocks, you can easily build a page without coding.",
@@ -92,7 +98,7 @@ export default class Experties extends Component {
         // {
         //   id: 1,
         //   name: "CSS",
-        //   icon: <Html5Outlined style={{ fontSize: 30, color }} />,
+        //             icon: Mongodb
         //   percent: "70",
         //   desc:
         //     "With lots of unique blocks, you can easily build a page without coding.",
@@ -101,7 +107,7 @@ export default class Experties extends Component {
         // {
         //   id: 1,
         //   name: "JQUERY",
-        //   icon: <Html5Outlined style={{ fontSize: 30, color }} />,
+        //             icon: Mongodb
         //   percent: "92",
         //   desc:
         //     "With lots of unique blocks, you can easily build a page without coding.",
@@ -110,11 +116,16 @@ export default class Experties extends Component {
         // {
         //   id: 1,
         //   name: "NEXTJS",
-        //   icon: <Html5Outlined style={{ fontSize: 30, color }} />,
+        //             icon: Mongodb
         //   percent: "35",
         //   desc:
         //     "With lots of unique blocks, you can easily build a page without coding.",
         // },
+
+        ,
+        ,
+        ,
+        ,
       ],
     };
   }
@@ -122,10 +133,12 @@ export default class Experties extends Component {
     return (
       <div className='mainExperties'>
         <div className='innerExperties'>
-          <h4>Work Expertise</h4>
+          <h4>Skills & Expertise</h4>
           <p>
-            Obviously I'm a Web Designer. Experienced with all stages of the
-            development cycle for dynamic web projects.
+            My specialties include quickly learning new skills and programming
+            languages, problem-solving, responsive design principles, website
+            optimization. So far I have MonngoDb, Express, React, Node,
+            javascript and Git/GitHub under my belt.
           </p>
 
           <div className='cardContainer'>
@@ -133,7 +146,12 @@ export default class Experties extends Component {
               return (
                 <Card className='card'>
                   <div className='cardHeader'>
-                    {item.icon}
+                    <div style={{ width: 35, height: 35 }}>
+                      <img
+                        style={{ width: "100%", height: "100%" }}
+                        src={item.icon}
+                      />
+                    </div>
                     <h4>{item.name}</h4>
                   </div>
                   {/* <div style={{ position: "absolute", top: 0, right: 0 }}>

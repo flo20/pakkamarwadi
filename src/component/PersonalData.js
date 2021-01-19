@@ -10,7 +10,7 @@ export default class PersonalData extends Component {
 
             <div className='details'>
               <h4>
-                Email: <span>queue@gmail.com</span>
+                Email: <span>Shravanmeena47@gmail.com</span>
               </h4>
 
               <h4>
@@ -18,7 +18,7 @@ export default class PersonalData extends Component {
               </h4>
 
               <h4>
-                Nationality: <span>indian</span>
+                Nationality: <span>Indian</span>
               </h4>
             </div>
           </div>
@@ -27,12 +27,11 @@ export default class PersonalData extends Component {
               I Am Full Stack <span>Developer</span> |
             </h4>
             <p>
-              Obviously I'm a Web Designer. Web Developer with over 3 years of
-              experience. Experienced with all stages of the development cycle
-              for dynamic web projects. The as opposed to using 'Content here,
-              content here', making it look like readable English.
+              I am passionate about development and I love building amazing and
+              interactive UI.
+              <br /> I keep things simple, clean and efficient.
             </p>
-            <h6>Signature</h6>
+            <h6>Shravanmeena</h6>
           </div>
         </div>
       </div>

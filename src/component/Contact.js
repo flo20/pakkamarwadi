@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "../style/component/_contact.scss";
-import { Card, Input, Button } from "antd";
+import { Card, Input, Button, Alert } from "antd";
 import {
-  EditOutlined,
-  FieldTimeOutlined,
+  EnvironmentOutlined,
+  MailOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
 const { TextArea } = Input;
@@ -14,30 +14,82 @@ export default class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      data: [{ id: 1 }, { id: 2 }, { id: 3 }],
+      warning: false,
+      data: [
+        {
+          id: 1,
+          icon: <PhoneOutlined />,
+          title: "Phone",
+          contact: "9660801827",
+          type: "phone",
+          description: "Let's have a call",
+        },
+        {
+          id: 2,
+          icon: <MailOutlined />,
+          title: "Email",
+          type: "email",
+
+          contact: "Shravanmeena47@gmail.com",
+          description: "Drop me a line",
+        },
+
+        {
+          id: 3,
+          icon: <EnvironmentOutlined />,
+          title: "Location",
+          type: "location",
+          contact: "View on Google map",
+          description: "Jaipur, Rajasthan",
+        },
+      ],
     };
   }
+
+  Warn = () => {
+    this.setState({
+      warning: true,
+    });
+  };
   render() {
     return (
       <div className='mainContact'>
         <div className='innerContact'>
           <h4>Contact Me</h4>
-          <p>
-            Obviously I'm a Web Designer. Experienced with all stages of the
-            development cycle for dynamic web projects.
-          </p>
+          <h5>
+            I'm happy to answer any question you have or provide with an
+            estimate. Just send me a message in the form below with any
+            questions you may have.
+          </h5>
 
           <div className='cardContainer'>
             {this.state.data.map((item, index) => {
               return (
-                <Card className='card'>
-                  <PhoneOutlined />
-                  <h4>Card title</h4>
-                  <p>
-                    Promising development turmoil inclusive education
-                    transformative community
-                  </p>
-                  <h6>152 534-468-854+ </h6>
+                <Card className='card' key={index}>
+                  {item.icon}
+                  <h4>{item.title}</h4>
+                  <p>{item.description}</p>
+                  {item.type == "phone" ? (
+                    <h6>
+                      <a href={`tel:${item.contact}`}>{item.contact}</a>
+                    </h6>
+                  ) : null}
+
+                  {item.type == "email" ? (
+                    <h6>
+                      <a href={`mailto:${item.contact}`}>{item.contact}</a>
+                    </h6>
+                  ) : null}
+
+                  {item.type == "location" ? (
+                    <h6>
+                      <a
+                        href='https://goo.gl/maps/qU61gDYZby6Jj3LP7'
+                        target='_blank'>
+                        {item.contact}
+                      </a>
+                    </h6>
+                  ) : null}
                 </Card>
               );
             })}
@@ -56,9 +108,23 @@ export default class Contact extends Component {
             </div>
           </div>
           <div className='sendBtn'>
-            <Button type='primary' shape='round' size='large'>
-              Send Message
-            </Button>
+            {this.state.warning ? (
+              <Alert
+                message='Under Construction'
+                description='Send me message on Shravanmeena47@gmail.com'
+                type='error'
+                showIcon
+                closable
+              />
+            ) : (
+              <Button
+                onClick={() => this.Warn()}
+                type='primary'
+                shape='round'
+                size='large'>
+                Send Message
+              </Button>
+            )}
           </div>
         </div>
       </div>
