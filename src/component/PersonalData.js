@@ -31,7 +31,7 @@ export default class PersonalData extends Component {
               interactive UI.
               <br /> I keep things simple, clean and efficient.
             </p>
-            <h6>Shravanmeena</h6>
+            {/* <h6>Shravanmeena</h6> */}
           </div>
         </div>
       </div>
