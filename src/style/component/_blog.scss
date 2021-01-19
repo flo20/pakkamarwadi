@@ -1,0 +1,64 @@
+@import "../../variables.scss";
+
+.mainBlogs {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color2;
+
+  .innerBlog {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding-bottom: 5vh;
+    h4 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 8vh;
+    }
+    .cardContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card {
+        width: 30%;
+        height: 320px;
+        border-radius: 10px;
+        background: $color2;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.051),
+          0 1px 1px rgba(0, 0, 0, 0.051);
+        .footer {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          height: 10vh;
+          h4 {
+            font-size: 13px;
+            font-weight: 500;
+            &:hover {
+              color: $color;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    // p {
+    //   font-size: 20px;
+    //   width: 100px;
+    // }
+  }
+}

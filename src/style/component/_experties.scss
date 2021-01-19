@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+
+.mainExperties {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $color2;
+
+  .innerExperties {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    padding-bottom: 5vh;
+    h4 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 2vh;
+    }
+    .cardContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card {
+        width: 24%;
+        height: 130px;
+        border-radius: 5px;
+        margin-top: 2%;
+        .cardHeader {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          h4 {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    // p {
+    //   font-size: 20px;
+    //   width: 100px;
+    // }
+  }
+}
