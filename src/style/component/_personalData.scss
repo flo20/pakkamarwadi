@@ -2,7 +2,7 @@
 
 .mainPersonalDetails {
   width: 100%;
-  height: 30vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@
 @media screen and (max-width: 768px) {
   .mainPersonalDetails {
     width: 100%;
-    min-height: 80vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: row;
     align-items: center;
