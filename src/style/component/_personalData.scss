@@ -54,3 +54,24 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .mainPersonalDetails {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // position: absolute;
+    //   background: $color2;
+
+    .innerPersonalDetails {
+      width: 90%;
+      height: 80%;
+      flex-direction: column;
+      .left {
+        width: 100%;
+      }
+    }
+  }
+}

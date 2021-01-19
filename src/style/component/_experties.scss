@@ -56,9 +56,26 @@
         }
       }
     }
-    // p {
-    //   font-size: 20px;
-    //   width: 100px;
-    // }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainExperties {
+    .innerExperties {
+      width: 90%;
+      flex-direction: column;
+      margin-top: 65vh;
+
+      p {
+        width: 80%;
+        font-size: 14px;
+      }
+      .cardContainer {
+        flex-direction: column;
+        .card {
+          width: 80%;
+        }
+      }
+    }
   }
 }

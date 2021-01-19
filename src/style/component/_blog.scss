@@ -37,7 +37,7 @@
       flex-wrap: wrap;
       .card {
         width: 30%;
-        height: 320px;
+        min-height: 320px;
         border-radius: 10px;
         background: $color2;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.051),
@@ -48,7 +48,7 @@
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-          height: 8vh;
+          margin-top: 3vh;
           h4 {
             font-size: 13px;
             font-weight: 500;
@@ -60,9 +60,29 @@
         }
       }
     }
-    // p {
-    //   font-size: 20px;
-    //   width: 100px;
-    // }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainBlogs {
+    .innerBlog {
+      width: 90%;
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      h4 {
+        font-size: 30px;
+      }
+      p {
+        width: 80%;
+        font-size: 14px;
+      }
+      .cardContainer {
+        flex-direction: column;
+        .card {
+          width: 90%;
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 }

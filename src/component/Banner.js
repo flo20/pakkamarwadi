@@ -31,7 +31,7 @@ export default class Banner extends Component {
                   size='large'>
                   Hire me
                 </Button>
-                <Button style={{ marginLeft: 20 }} shape='round' size='large'>
+                <Button className='secBtn' shape='round' size='large'>
                   Download CV <DownloadOutlined />
                 </Button>
               </div>
