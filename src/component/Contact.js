@@ -6,8 +6,9 @@ import {
   MailOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
+import { color } from "../constants";
+
 const { TextArea } = Input;
-// import { color } from "../constants";
 const { Meta } = Card;
 
 export default class Contact extends Component {
@@ -53,7 +54,7 @@ export default class Contact extends Component {
   };
   render() {
     return (
-      <div className='mainContact'>
+      <div className={this.props.theme ? "mainContact" : "mainContactDark"}>
         <div className='innerContact'>
           <h4>Contact Me</h4>
           <h5>
@@ -66,7 +67,14 @@ export default class Contact extends Component {
             {this.state.data.map((item, index) => {
               return (
                 <Card className='card' key={index}>
-                  {item.icon}
+                  <span
+                    style={
+                      this.props.theme
+                        ? { color: "#0d1117" }
+                        : { color: "rgba(211, 211, 211, 0.774)" }
+                    }>
+                    {item.icon}
+                  </span>
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
                   {item.type == "phone" ? (

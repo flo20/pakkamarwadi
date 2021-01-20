@@ -128,3 +128,134 @@
     }
   }
 }
+
+// theme
+.mainWorksDark {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1117;
+
+  .innerWorks {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    h4 {
+      font-size: 35px;
+      font-weight: 600;
+      color: rgba(211, 211, 211, 0.774);
+    }
+    p {
+      margin-bottom: 2vh;
+      text-align: center;
+      width: 70%;
+      font-size: 16px;
+      color: #8b949e;
+    }
+    .cardContainer {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card {
+        width: 30%;
+        height: 180px;
+        margin-top: 2%;
+        border-radius: 10px;
+        padding: 0;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .container {
+          margin: 0 auto;
+          position: relative;
+          border-radius: 10px;
+          width: 100%;
+          height: 100%;
+        }
+
+        .image {
+          display: block;
+          border-radius: 10px;
+          height: 100%;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        .overlay {
+          position: absolute;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.8);
+          width: 100%;
+          transition: 0.5s ease-out;
+          opacity: 0;
+          color: white;
+          border-radius: 10px;
+          font-size: 20px;
+          padding: 20px;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+          cursor: pointer;
+          a {
+            color: $color3;
+            font-size: 20px;
+            font-weight: 800;
+            &:hover {
+              color: $color;
+            }
+          }
+        }
+
+        .container:hover .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainWorksDark {
+    .innerWorks {
+      width: 90%;
+      height: 100%;
+      flex-direction: column;
+
+      h4 {
+        font-size: 30px;
+      }
+      p {
+        width: 80%;
+        font-size: 14px;
+      }
+      .cardContainer {
+        flex-direction: column;
+        .card {
+          width: 90%;
+          height: 200px;
+          margin-bottom: 4%;
+
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
+            0 10px 10px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+}

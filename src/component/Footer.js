@@ -84,7 +84,10 @@ export default class Footer extends Component {
   }
   render() {
     return (
-      <div className='footerContainer'>
+      <div
+        className={
+          this.props.theme ? "footerContainer" : "footerContainerDark"
+        }>
         <div className='top'>
           <h4 onClick={this.props.home}>
             Pakka<span style={{ color }}>Marwadi</span>

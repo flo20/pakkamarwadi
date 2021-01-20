@@ -66,7 +66,7 @@ export default class Work extends Component {
   }
   render() {
     return (
-      <div className='mainWorks'>
+      <div className={this.props.theme ? "mainWorks" : "mainWorksDark"}>
         <div className='innerWorks'>
           <h4>My Work & Portfolio</h4>
           <p>

@@ -3,7 +3,10 @@ import "../style/component/_personalData.scss";
 export default class PersonalData extends Component {
   render() {
     return (
-      <div className='mainPersonalDetails'>
+      <div
+        className={
+          this.props.theme ? "mainPersonalDetails" : "mainPersonalDetailsDark"
+        }>
         <div className='innerPersonalDetails'>
           <div className='left'>
             <h1>Personal Details</h1>

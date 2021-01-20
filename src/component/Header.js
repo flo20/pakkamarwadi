@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../style/component/_header.scss";
 import { color } from "../constants";
+import { Button, Switch } from "antd";
 
 import {
   LinkedinOutlined,
@@ -13,7 +14,7 @@ import { linkedin, medium, github } from "../constants";
 export default class Header extends Component {
   render() {
     return (
-      <div className='header'>
+      <div className={this.props.theme ? "header" : "headerDark"}>
         <div className='innerHeader'>
           <div className='left'>
             <h4 onClick={this.props.home} style={{ cursor: "pointer" }}>
@@ -27,11 +28,18 @@ export default class Header extends Component {
               <h4 onClick={this.props.project}>projects</h4>
               <h4 onClick={this.props.blog}>blogs</h4>
               <h4 onClick={this.props.contact}>contact</h4>
-              <h4>resume</h4>
             </div>
           </div>
           <div className='end'>
-            <a href={github} target='_blank'>
+            <Switch
+              // style={{ marginRight: 20 }}
+              checkedChildren='Dark'
+              unCheckedChildren='Light'
+              defaultChecked
+              onClick={this.props.themeChange}
+            />
+
+            {/* <a href={github} target='_blank'>
               <GithubOutlined />
             </a>
             <a href={linkedin} target='_blank'>
@@ -39,7 +47,7 @@ export default class Header extends Component {
             </a>
             <a href={medium} target='_blank'>
               <MediumOutlined />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

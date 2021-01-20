@@ -103,3 +103,114 @@
     }
   }
 }
+
+// dark theme
+.mainBannerDark {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d1117;
+
+  .innerBanner {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .innerLeft {
+        width: 80%;
+        height: 60%;
+        .badge {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border-radius: 5px;
+          padding: 20px;
+          background-color: transparent;
+          border: 1px solid #bbb;
+          color: #bbb;
+          span {
+            margin-right: 10px;
+          }
+        }
+        h4 {
+          font-size: 50px;
+          font-weight: 600;
+          margin-top: 5px;
+          line-height: 60px;
+          margin-top: 24px;
+          color: rgba(211, 211, 211, 0.774);
+        }
+        p {
+          color: rgba(211, 211, 211, 0.603);
+          font-size: 16px;
+          margin-top: -10px;
+        }
+
+        .btnContainer {
+          .secBtn {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/newbg_crop.png") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: contain;
+      img {
+        object-fit: cover;
+        width: 100%;
+        display: none;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainBannerDark {
+    height: 100vh;
+    .innerBanner {
+      height: 100%;
+      flex-direction: column;
+      .left {
+        width: 100%;
+        height: 90%;
+
+        .innerLeft {
+          h4 {
+            font-size: 45px;
+          }
+
+          .btnContainer {
+            display: flex;
+            flex-direction: row;
+            .secBtn {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      .right {
+        display: none;
+      }
+    }
+  }
+}

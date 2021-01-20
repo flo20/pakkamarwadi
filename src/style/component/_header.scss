@@ -25,17 +25,9 @@
         text-transform: capitalize;
       }
     }
-    .end {
-      width: 10%;
-      display: flex;
-      flex-direction: row;
-      //   align-items: center;
-      justify-content: space-evenly;
-      font-size: 18;
-      color: $color;
-    }
+
     .right {
-      width: 50%;
+      width: 40%;
 
       .innerRight {
         width: 100%;
@@ -59,6 +51,16 @@
         }
       }
     }
+
+    .end {
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      //   align-items: center;
+      justify-content: space-evenly;
+      font-size: 18;
+      color: $color;
+    }
   }
 }
 
@@ -68,7 +70,78 @@
       .right {
         display: none;
       }
-      .end {
+    }
+  }
+}
+
+// them dark
+.headerDark {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 7vh;
+  justify-content: center;
+  position: fixed;
+  background-color: #121212;
+  z-index: 1;
+  .innerHeader {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5vh;
+    .left {
+      width: 30%;
+      h4 {
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: capitalize;
+        color: rgba(211, 211, 211, 0.774);
+      }
+    }
+    .end {
+      width: 20%;
+      display: flex;
+      flex-direction: row;
+      //   align-items: center;
+      justify-content: space-evenly;
+      font-size: 18;
+      color: $color;
+    }
+    .right {
+      width: 40%;
+
+      .innerRight {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h4 {
+          font-size: 16px;
+          margin-left: 10px;
+          text-transform: uppercase;
+          color: rgba(211, 211, 211, 0.774);
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          &:hover,
+          &:active,
+          &:visited {
+            color: $color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headerDark {
+    .innerHeader {
+      .right {
         display: none;
       }
     }

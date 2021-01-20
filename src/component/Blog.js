@@ -21,19 +21,18 @@ export default class Experties extends Component {
       data: [
         {
           id: 1,
-          title:
-            "10 Best Javascript Projects to Build your Skills [Javascript Examples]",
+          title: "10 Best Javascript Projects to Build ...",
           description:
-            "Introduction  One of the most popular scripting languages, JavaScript is used in all the web applications...",
+            "Introduction  One of the most popular scripting languages, JavaScript is used in all the web...",
           read: false,
           cover: Medium2,
         },
 
         {
           id: 2,
-          title: "Top 10 React Courses to Learn React in Depth]",
+          title: "Top 10 React Courses to Learn React..",
           description:
-            "React is turning heads worldwide as one of the most popularly used libraries in JavaScript. Engineers who are adept...",
+            "React is turning heads worldwide as one of the most popularly used libraries in JavaScript. Engineers...",
           read: false,
           cover: Medium3,
         },
@@ -65,7 +64,7 @@ export default class Experties extends Component {
   };
   render() {
     return (
-      <div className='mainBlogs'>
+      <div className={this.props.theme ? "mainBlogs" : "mainBlogsDark"}>
         <div className='innerBlog'>
           <h4>Latest News & Blog</h4>
           {this.state.warning ? (
@@ -99,14 +98,8 @@ export default class Experties extends Component {
                     />
                   }
                   className='card'>
-                  <Meta
-                    // avatar={
-                    //   <Avatar src='https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png' />
-                    // }
-                    title={item.title}
-                    description={item.description}
-                  />
-
+                  <h1>{item.title}</h1>
+                  <h6>{item.description}</h6>
                   <div className='footer'>
                     <h4>
                       <FieldTimeOutlined />

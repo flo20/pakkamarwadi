@@ -131,7 +131,7 @@ export default class Experties extends Component {
   }
   render() {
     return (
-      <div className='mainExperties'>
+      <div className={this.props.theme ? "mainExperties" : "mainExpertiesDark"}>
         <div className='innerExperties'>
           <h4>Skills & Expertise</h4>
           <p>

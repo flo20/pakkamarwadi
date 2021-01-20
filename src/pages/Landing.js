@@ -15,10 +15,10 @@ import scrollToComponent from "react-scroll-to-component";
 import Education from "../component/Education";
 
 export default class Landing extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { scrollTop: 0 };
-  // }
+  constructor(props) {
+    super(props);
+    this.state = { theme: true };
+  }
 
   listenScrollEvent() {
     console.log("Scroll event detected!");
@@ -33,11 +33,18 @@ export default class Landing extends Component {
     });
   }
 
+  themeChange = () => {
+    this.setState({
+      theme: !this.state.theme,
+    });
+  };
   render() {
     return (
       <div onScroll={this.listenScrollEvent} className='home'>
         <div className='banner'>
           <Header
+            theme={this.state.theme}
+            themeChange={() => this.themeChange()}
             home={() =>
               scrollToComponent(this.Home, {
                 offset: 0,
@@ -76,6 +83,7 @@ export default class Landing extends Component {
           />
 
           <Banner
+            theme={this.state.theme}
             contact={() =>
               scrollToComponent(this.Contact, {
                 offset: 0,
@@ -87,13 +95,15 @@ export default class Landing extends Component {
               this.Home = section;
             }}
           />
-          <PersonalData />
+          <PersonalData theme={this.state.theme} />
           <Experties
+            theme={this.state.theme}
             ref={(section) => {
               this.Experties = section;
             }}
           />
           <Work
+            theme={this.state.theme}
             ref={(section) => {
               this.Project = section;
             }}
@@ -102,16 +112,18 @@ export default class Landing extends Component {
           {/* <Education /> */}
 
           <Blog
+            theme={this.state.theme}
             ref={(section) => {
               this.Blog = section;
             }}
           />
           <Contact
+            theme={this.state.theme}
             ref={(section) => {
               this.Contact = section;
             }}
           />
-          <Footer />
+          <Footer theme={this.state.theme} />
 
           {/* <section
             className='violet'
