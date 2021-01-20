@@ -158,7 +158,11 @@ export default class Experties extends Component {
                     <h4 style={{ background: "red" }}>{item.percent}</h4>
                   </div> */}
 
-                  <Progress percent={item.percent} status='active' />
+                  <Progress
+                    percent={item.percent}
+                    status='active'
+                    strokeColor={this.props.theme ? color : "#0d11179d"}
+                  />
                 </Card>
               );
             })}
