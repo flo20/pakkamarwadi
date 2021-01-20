@@ -58,9 +58,9 @@ export default class Contact extends Component {
         <div className='innerContact'>
           <h4>Contact Me</h4>
           <h5>
-            I'm happy to answer any question you have or provide with an
-            estimate. Just send me a message in the form below with any
-            questions you may have.
+            I'm happy to answer any question you have or provide an estimate.
+            Just send me a message in the form below with any questions you may
+            have.
           </h5>
 
           <div className='cardContainer'>
