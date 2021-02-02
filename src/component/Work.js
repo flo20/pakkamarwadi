@@ -6,9 +6,9 @@ import "../style/component/_work.scss";
 import Monorbit from "../assets/monorbit.png";
 import School from "../assets/school.png";
 import Calculator from "../assets/calculator.png";
-import Instagram from "../assets/instagram.png";
+import Funtube from "../assets/funtube.png";
 import Airbnb from "../assets/airbnb.png";
-import Flipcart from "../assets/flipcart.png";
+import Social from "../assets/thesocial.png";
 export default class Work extends Component {
   constructor() {
     super();
@@ -31,11 +31,10 @@ export default class Work extends Component {
         },
         {
           id: 3,
-          name: "Instagram",
-          img: Instagram,
-          github_link:
-            "https://github.com/ShravanMeena/Instagram-clone-frontend",
-          live_link: "https://github.com/ShravanMeena/Instagram-clone-frontend",
+          name: "Funtube",
+          img: Funtube,
+          github_link: "https://github.com/ShravanMeena/funtube",
+          live_link: "https://github.com/ShravanMeena/funtube",
         },
         {
           id: 4,
@@ -56,10 +55,10 @@ export default class Work extends Component {
         },
         {
           id: 6,
-          name: "Flipcart",
-          img: Flipcart,
-          github_link: "https://github.com/ShravanMeena/flipcart-clone",
-          live_link: "https://github.com/ShravanMeena/flipcart-clone",
+          name: "Social App",
+          img: Social,
+          github_link: "https://github.com/ShravanMeena/The-social-app",
+          live_link: "https://github.com/ShravanMeena/The-social-app",
         },
       ],
     };
@@ -80,12 +79,12 @@ export default class Work extends Component {
                   <div class='container'>
                     <img src={item.img} className='image' />
                     <div class='overlay'>
-                      <a href={item.live_link} target='_blank'>
+                      {/* <a href={item.live_link} target='_blank'>
                         Live
-                      </a>
+                      </a> */}
 
                       <a href={item.github_link} target='_blank'>
-                        Github
+                        View on Github
                       </a>
                     </div>
                   </div>

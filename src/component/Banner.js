@@ -60,7 +60,11 @@ export default class Banner extends Component {
                   }
                   shape='round'
                   size='large'>
-                  Download CV <DownloadOutlined />
+                  <a
+                    href='https://drive.google.com/file/d/10OQ_Z3nnGaGXZTbm2vA6tTzKZrxieDu2/view?usp=sharing'
+                    target='_blank'>
+                    Download CV <DownloadOutlined />
+                  </a>
                 </Button>
               </div>
             </div>

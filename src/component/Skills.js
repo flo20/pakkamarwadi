@@ -10,7 +10,7 @@ import Node from "../assets/n.jpeg";
 import Js from "../assets/js.jpg";
 import Rn from "../assets/rn.png";
 import Sass from "../assets/sass.png";
-import Boots from "../assets/bootstrap.png";
+import GITHUB from "../assets/github-mark.png";
 export default class Experties extends Component {
   constructor() {
     super();
@@ -78,9 +78,9 @@ export default class Experties extends Component {
         },
         {
           id: 8,
-          name: "BOOTSTRAP",
-          icon: Boots,
-          percent: "80",
+          name: "GITHUb",
+          icon: GITHUB,
+          percent: "70",
           desc:
             "With lots of unique blocks, you can easily build a page without coding.",
         },
