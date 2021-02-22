@@ -13,11 +13,12 @@ import Footer from "../component/Footer";
 
 import scrollToComponent from "react-scroll-to-component";
 import Education from "../component/Education";
+import Image from "../component/Image";
 
 export default class Landing extends Component {
   constructor(props) {
     super(props);
-    this.state = { theme: true };
+    this.state = { windowWidth: window.innerWidth, theme: true };
   }
 
   listenScrollEvent() {
@@ -123,6 +124,8 @@ export default class Landing extends Component {
               this.Contact = section;
             }}
           />
+          {this.state.windowWidth <= 768 ? <Image /> : null}
+
           <Footer theme={this.state.theme} />
 
           {/* <section
