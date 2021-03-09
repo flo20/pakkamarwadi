@@ -30,8 +30,7 @@ export default class PersonalData extends Component {
               I Am Full Stack <span>Developer</span> |
             </h4>
             <p>
-              I am passionate about development and I love building amazing and
-              interactive UI.
+             I am a full stack Developer . Passionate about using latest Technology. It is all of experience just because I love developing Apps and learn new technologies
               <br /> I keep things simple, clean and efficient.
             </p>
             {/* <h6>Shravanmeena</h6> */}
