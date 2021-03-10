@@ -22,6 +22,7 @@ export default class Contact extends Component {
           icon: <PhoneOutlined />,
           title: "Phone",
           contact: "9660801827",
+          secContact: "7467816084",
           type: "phone",
           description: "Let's have a call",
         },
@@ -77,9 +78,15 @@ export default class Contact extends Component {
                   </span>
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
-                  {item.type == "phone" ? (
+                  {/* {item.type == "phone" ? (
                     <h6>
                       <a href={`tel:${item.contact}`}>{item.contact}</a>
+                    </h6>
+                  ) : null} */}
+
+                  {item.type == "phone" ? (
+                    <h6>
+                      <a href={`tel:${item.secContact}`}>{item.secContact}</a>
                     </h6>
                   ) : null}
 

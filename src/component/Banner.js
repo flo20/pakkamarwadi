@@ -4,6 +4,7 @@ import { DownloadOutlined } from "@ant-design/icons";
 import Hero from "../assets/newbg_crop.png";
 import "../style/component/_banner.scss";
 import { color } from "../constants";
+import Typewriter from "typewriter-effect";
 
 export default class Banner extends Component {
   render() {
@@ -27,8 +28,22 @@ export default class Banner extends Component {
 
               <h4>Here I'am Shravan Meena</h4>
               <p>
-                I love writing code. I believe in the power of programming to
-                transform and improve the lives of people around the world.
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString(
+                        " I love writing code. I believe in the power of programming to  transform and improve the lives of people around the world."
+                      )
+                      .callFunction(() => {
+                        console.log("String typed out!");
+                      })
+                      .pauseFor(100)
+                      .callFunction(() => {
+                        console.log("All strings were deleted");
+                      })
+                      .start();
+                  }}
+                />
               </p>
               <div className='btnContainer'>
                 <Button
@@ -61,7 +76,7 @@ export default class Banner extends Component {
                   shape='round'
                   size='large'>
                   <a
-                    href='https://drive.google.com/file/d/1uk7BZud0wWkso7ucnex0rSYw4N1QADQM/view?usp=sharing'
+                    href='https://drive.google.com/file/d/1qxM3ZC7J37O-fzQEEUVJPltnXn9EM8LJ/view?usp=sharing'
                     target='_blank'>
                     Download CV <DownloadOutlined />
                   </a>

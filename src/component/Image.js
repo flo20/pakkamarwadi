@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Hero from "../assets/newbg_crop.png";
+import Hero from "../assets/2re.png";
 
 export default class Image extends Component {
   render() {

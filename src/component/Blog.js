@@ -21,11 +21,14 @@ export default class Experties extends Component {
       data: [
         {
           id: 1,
-          title: "10 Best Javascript Projects to Build ...",
+          title: "how to upload the image to node ...",
           description:
-            "Introduction  One of the most popular scripting languages, JavaScript is used in all the web...",
+            "That being said, almost every interactive website today supports file uploads....",
           read: false,
           cover: Medium2,
+          link:
+            "https://shravanmeena.medium.com/how-to-upload-the-image-to-node-server-using-multer-b4933f95cbfa",
+          date: "02 March 2021",
         },
 
         {
@@ -35,15 +38,20 @@ export default class Experties extends Component {
             "React is turning heads worldwide as one of the most popularly used libraries in JavaScript. Engineers...",
           read: false,
           cover: Medium3,
+          link: "",
+          date: "",
         },
 
         {
           id: 3,
-          title: "Why should you learn Angular?",
+          title: "How Capture a React Native view to...",
           description:
-            "What is Angular? Angular is a Javascript framework that is used by developers for building web, desktop ...",
+            "In this React Native tutorial, we are going to use react-native-cli in order to build your first React Native...",
           read: false,
           cover: Medium1,
+          link:
+            "https://shravanmeena.medium.com/react-native-view-shot-2672566d131f",
+          date: "10 March 2021",
         },
       ],
     };
@@ -102,12 +110,25 @@ export default class Experties extends Component {
                   <h6>{item.description}</h6>
                   <div className='footer'>
                     <h4>
-                      <FieldTimeOutlined />
-                      Dec 12
+                      {item.date.length > 0 ? (
+                        <h4>
+                          <FieldTimeOutlined />
+                          {item.date}
+                        </h4>
+                      ) : null}
                     </h4>
-                    <h4 onClick={this.Warn}>
-                      Read more <RightOutlined />
-                    </h4>
+
+                    {item.link.length > 0 ? (
+                      <a href={item.link} target='_blank'>
+                        <h4>
+                          Read more <RightOutlined />
+                        </h4>
+                      </a>
+                    ) : (
+                      <span onClick={this.Warn}>
+                        Coming soon <RightOutlined />
+                      </span>
+                    )}
                   </div>
                 </Card>
               );
