@@ -4,7 +4,7 @@ import { Card, Radio, Button } from "antd";
 import { RightOutlined } from "@ant-design/icons";
 import "../style/component/_work.scss";
 import Monorbit from "../assets/monorbit.png";
-import School from "../assets/school.png";
+import Ecommerce from "../assets/ecommerce.png";
 import Calculator from "../assets/calculator.png";
 import Funtube from "../assets/funtube.png";
 import Airbnb from "../assets/airbnb.png";
@@ -24,10 +24,18 @@ export default class Work extends Component {
 
         {
           id: 2,
-          name: "School",
-          img: School,
-          github_link: "https://github.com/ShravanMeena/off-canvas-frontend",
-          live_link: "https://shravanmeena.github.io/off-canvas-frontend/",
+          name: "Ecommerce",
+          img: Ecommerce,
+          github_link: "https://github.com/ShravanMeena/ecommerce",
+          live_link: "https://ecommerce0799.herokuapp.com/",
+        },
+        {
+          id: 6,
+          name: "Social App",
+          img: Social,
+          github_link:
+            "https://github.com/ShravanMeena/Social_connect-with-world",
+          live_link: "https://social0799.herokuapp.com/",
         },
         {
           id: 3,
@@ -53,13 +61,6 @@ export default class Work extends Component {
           github_link: "https://github.com/ShravanMeena/Calculator",
           live_link: "https://shravanmeena.github.io/Calculator/",
         },
-        {
-          id: 6,
-          name: "Social App",
-          img: Social,
-          github_link: "https://github.com/ShravanMeena/The-social-app",
-          live_link: "https://github.com/ShravanMeena/The-social-app",
-        },
       ],
     };
   }
@@ -79,12 +80,12 @@ export default class Work extends Component {
                   <div class='container'>
                     <img src={item.img} className='image' />
                     <div class='overlay'>
-                      {/* <a href={item.live_link} target='_blank'>
+                      <a href={item.live_link} target='_blank'>
                         Live
-                      </a> */}
+                      </a>
 
                       <a href={item.github_link} target='_blank'>
-                        View on Github
+                        Github
                       </a>
                     </div>
                   </div>
