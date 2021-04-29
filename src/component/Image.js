@@ -6,6 +6,7 @@ export default class Image extends Component {
     return (
       <div style={{ width: "100%", height: "100vh" }}>
         <img
+          alt='asds'
           src={Hero}
           style={{ width: "100%", height: "100%", objectFit: "contain" }}
         />

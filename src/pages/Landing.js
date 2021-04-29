@@ -12,7 +12,6 @@ import Contact from "../component/Contact";
 import Footer from "../component/Footer";
 
 import scrollToComponent from "react-scroll-to-component";
-import Education from "../component/Education";
 import Image from "../component/Image";
 
 export default class Landing extends Component {

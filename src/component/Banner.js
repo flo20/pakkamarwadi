@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button, Badge, Space } from "antd";
+import { Button } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
 import Hero from "../assets/newbg_crop.png";
 import "../style/component/_banner.scss";
@@ -76,6 +76,7 @@ export default class Banner extends Component {
                   shape='round'
                   size='large'>
                   <a
+                    rel='noreferrer'
                     href='https://drive.google.com/file/d/1qxM3ZC7J37O-fzQEEUVJPltnXn9EM8LJ/view?usp=sharing'
                     target='_blank'>
                     Download CV <DownloadOutlined />

@@ -1,15 +1,7 @@
 import React, { Component } from "react";
 import "../style/component/_header.scss";
 import { color } from "../constants";
-import { Button, Switch } from "antd";
-
-import {
-  LinkedinOutlined,
-  InstagramOutlined,
-  GithubOutlined,
-  MediumOutlined,
-} from "@ant-design/icons";
-import { linkedin, medium, github } from "../constants";
+import { Switch } from "antd";
 
 export default class Header extends Component {
   render() {

@@ -1,17 +1,12 @@
 import React, { Component } from "react";
 import "../style/component/_blog.scss";
 import { Card, Alert } from "antd";
-import {
-  EditOutlined,
-  FieldTimeOutlined,
-  RightOutlined,
-} from "@ant-design/icons";
+import { FieldTimeOutlined, RightOutlined } from "@ant-design/icons";
 
 // import { color } from "../constants";
 import Medium1 from "../assets/medium1.png";
 import Medium2 from "../assets/medium2.png";
 import Medium3 from "../assets/medium3.png";
-const { Meta } = Card;
 
 export default class Experties extends Component {
   constructor() {
@@ -119,7 +114,7 @@ export default class Experties extends Component {
                     </h4>
 
                     {item.link.length > 0 ? (
-                      <a href={item.link} target='_blank'>
+                      <a rel='noreferrer' href={item.link} target='_blank'>
                         <h4>
                           Read more <RightOutlined />
                         </h4>

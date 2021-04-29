@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import { Card, Radio, Button } from "antd";
+import { Button } from "antd";
 
 import { RightOutlined } from "@ant-design/icons";
 import "../style/component/_work.scss";
-import Monorbit from "../assets/monorbit.png";
+import Monorbit from "../assets/examhint.png";
 import Ecommerce from "../assets/ecommerce.png";
-import Calculator from "../assets/calculator.png";
-import Funtube from "../assets/funtube.png";
-import Airbnb from "../assets/airbnb.png";
-import Social from "../assets/thesocial.png";
+import Calculator from "../assets/easybook.png";
+import Funtube from "../assets/resumemaker.png";
+import Airbnb from "../assets/newsapp.png";
+import Social from "../assets/plack.png";
+
 export default class Work extends Component {
   constructor() {
     super();
@@ -16,10 +17,11 @@ export default class Work extends Component {
       data: [
         {
           id: 1,
-          name: "Monorbit",
+          name: "Examhint",
           img: Monorbit,
-          github_link: "#",
-          live_link: "https://business.monorbit.com/",
+          github_link: "https://github.com/ShravanMeena/Examhint",
+          live_link: " https://examhint.netlify.app/",
+          youtube: "https://youtu.be/N4h27sPQv1E",
         },
 
         {
@@ -28,38 +30,42 @@ export default class Work extends Component {
           img: Ecommerce,
           github_link: "https://github.com/ShravanMeena/ecommerce",
           live_link: "https://ecommerce0799.herokuapp.com/",
+          youtube: "https://youtu.be/XPAIGeyutEA",
         },
         {
           id: 6,
-          name: "Social App",
+          name: "Slack",
           img: Social,
-          github_link:
-            "https://github.com/ShravanMeena/Social_connect-with-world",
-          live_link: "https://social0799.herokuapp.com/",
+          github_link: "https://github.com/ShravanMeena/plack-a-community",
+          live_link: "https://slack0799.netlify.app/",
+          youtube: "https://youtu.be/Q4NF53fJiFQ",
         },
         {
           id: 3,
-          name: "Funtube",
+          name: "CvMaker",
           img: Funtube,
-          github_link: "https://github.com/ShravanMeena/funtube",
-          live_link: "https://github.com/ShravanMeena/funtube",
+          github_link: "https://github.com/ShravanMeena/cvmaker",
+          live_link: "https://cvmaker0799.netlify.app",
+          youtube: "https://youtu.be/2_xt1WpoBgU",
         },
         {
           id: 4,
-          name: "Airbnb",
+          name: "NEWS",
           img: Airbnb,
           github_link:
-            "https://github.com/ShravanMeena/Airnb-Clone-App-In-React-Native",
-          live_link:
-            "https://github.com/ShravanMeena/Airnb-Clone-App-In-React-Native",
+            "https://github.com/ShravanMeena/News-application-with-react-native",
+          live_link: "https://youtu.be/lghOv6mlLzs",
+          youtube: "https://youtu.be/lghOv6mlLzs",
         },
 
         {
           id: 5,
-          name: "Calculator",
+          name: "EasyBook",
           img: Calculator,
-          github_link: "https://github.com/ShravanMeena/Calculator",
-          live_link: "https://shravanmeena.github.io/Calculator/",
+          github_link:
+            "https://github.com/ShravanMeena/EasyHotel-hotel-booking-system",
+          live_link: "https://easyhotel0799.netlify.app/",
+          youtube: "https://youtu.be/Y8Dj93NPgoM",
         },
       ],
     };
@@ -78,14 +84,21 @@ export default class Work extends Component {
               return (
                 <div className='card'>
                   <div class='container'>
-                    <img src={item.img} className='image' />
+                    <img src={item.img} className='image' alt='sd' />
                     <div class='overlay'>
-                      <a href={item.live_link} target='_blank'>
+                      <a rel='noreferrer' href={item.live_link} target='_blank'>
                         Live
                       </a>
 
-                      <a href={item.github_link} target='_blank'>
+                      <a
+                        rel='noreferrer'
+                        href={item.github_link}
+                        target='_blank'>
                         Github
+                      </a>
+
+                      <a rel='noreferrer' href={item.youtube} target='_blank'>
+                        youtube
                       </a>
                     </div>
                   </div>
@@ -100,6 +113,7 @@ export default class Work extends Component {
             shape='round'
             size='large'>
             <a
+              rel='noreferrer'
               href='https://github.com/ShravanMeena?tab=repositories'
               target='_blank'>
               See More <RightOutlined />

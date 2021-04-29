@@ -6,10 +6,8 @@ import {
   MailOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
-import { color } from "../constants";
 
 const { TextArea } = Input;
-const { Meta } = Card;
 
 export default class Contact extends Component {
   constructor() {
@@ -84,21 +82,22 @@ export default class Contact extends Component {
                     </h6>
                   ) : null} */}
 
-                  {item.type == "phone" ? (
+                  {item.type === "phone" ? (
                     <h6>
                       <a href={`tel:${item.secContact}`}>{item.secContact}</a>
                     </h6>
                   ) : null}
 
-                  {item.type == "email" ? (
+                  {item.type === "email" ? (
                     <h6>
                       <a href={`mailto:${item.contact}`}>{item.contact}</a>
                     </h6>
                   ) : null}
 
-                  {item.type == "location" ? (
+                  {item.type === "location" ? (
                     <h6>
                       <a
+                        rel='noreferrer'
                         href='https://goo.gl/maps/qU61gDYZby6Jj3LP7'
                         target='_blank'>
                         {item.contact}

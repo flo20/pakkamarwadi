@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../style/component/_experties.scss";
 import { Card, Progress } from "antd";
-import { Html5Outlined, BoldOutlined } from "@ant-design/icons";
 import { color } from "../constants";
 import Mongodb from "../assets/m.jpeg";
 import Express from "../assets/e.jpeg";
@@ -121,11 +120,6 @@ export default class Experties extends Component {
         //   desc:
         //     "With lots of unique blocks, you can easily build a page without coding.",
         // },
-
-        ,
-        ,
-        ,
-        ,
       ],
     };
   }
@@ -148,6 +142,7 @@ export default class Experties extends Component {
                   <div className='cardHeader'>
                     <div style={{ width: 35, height: 35 }}>
                       <img
+                        alt='sdad'
                         style={{ width: "100%", height: "100%" }}
                         src={item.icon}
                       />

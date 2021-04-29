@@ -99,18 +99,18 @@ export default class Footer extends Component {
             </span>
           </p>
           <div className='innerTopFooter'>
-            <a href={github} target='_blank'>
+            <a rel='noreferrer' href={github} target='_blank'>
               <Button shape='circle' size='large'>
                 <GithubOutlined />
               </Button>
             </a>
 
-            <a href={linkedin} target='_blank'>
+            <a rel='noreferrer' href={linkedin} target='_blank'>
               <Button shape='circle' size='large'>
                 <LinkedinOutlined />
               </Button>
             </a>
-            <a href={instagram} target='_blank'>
+            <a rel='noreferrer' href={instagram} target='_blank'>
               <Button shape='circle' size='large'>
                 <InstagramOutlined />
               </Button>
@@ -118,13 +118,13 @@ export default class Footer extends Component {
             {/* <Button shape='circle' size='large'>
               <FacebookOutlined />
             </Button> */}
-            <a href={medium} target='_blank'>
+            <a rel='noreferrer' href={medium} target='_blank'>
               <Button shape='circle' size='large'>
                 <MediumOutlined />
               </Button>
             </a>
 
-            <a href={twitter} target='_blank'>
+            <a rel='noreferrer' href={twitter} target='_blank'>
               <Button shape='circle' size='large'>
                 <TwitterOutlined />
               </Button>
