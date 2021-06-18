@@ -11,16 +11,16 @@
 
 ## How to get started❓
 
-You can refer to [this](https://github.com/firstcontributions/first-contributions) if you are contributing for the first time:
+You can refer to [this](https://github.com/firstcontributions/first-contributions) if you are contributing for the first time.
 
-## Contribution Guidelines 🏗
+## Contribution Guidelines
 
 If you find a bug or want o add a new feature, browse the [open issues](https://github.com/ShravanMeena/pakkamarwadi/issues) before opening a new one. You can also take a look at the [Open Source Guide](https://opensource.guide/).
 
 
 **0.**  Wait for the Issue to be assigned to you before you start working on it.
 
-**1.**  Fork [this](https://github.com/ShravanMeena/pakkamarwadi) repository.
+**1.**  Fork [repository](https://github.com/ShravanMeena/pakkamarwadi).
 
 **2.**  Clone your forked copy of the project.
 
@@ -42,9 +42,9 @@ yarn start
 
 **9.** Push committed changes to your remote repo.
 
-**12.** Create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are supposed to make a PR to.
+**12.** Create a pull request, click on `compare and pull requests`.
 
-**13.** Add an appropriate title and description to your pull request explaining your changes and efforts done.
+**13.** Add an appropriate title and description to your pull request explaining your changes made.
 
 **14.** Click on `Create Pull Request`.
 
