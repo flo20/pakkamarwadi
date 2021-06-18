@@ -28,7 +28,7 @@ If you find a bug or want o add a new feature, browse the [open issues](https://
 
 **5.** Create a new branch.
 
-**6.** Install packages with:
+**6.** Install dependancies with:
 ```
 yarn install
 ```
