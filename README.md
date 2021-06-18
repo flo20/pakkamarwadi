@@ -3,7 +3,11 @@
 
 ## Tech Stack
 
-<img src="https://i.postimg.cc/fWKwrRhL/download.png">
+- HTML
+- CSS
+- SCSS
+- JAVASCRIPT
+
 
 ## How to get started❓
 
