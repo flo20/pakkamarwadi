@@ -26,7 +26,7 @@ export default class Banner extends Component {
                 <span>Looking for a Developer !</span>
               </Button> */}
 
-              <h4>Here I'am Shravan Meena</h4>
+              <h4>Hi I'm Shravan Meena</h4>
               <p>
                 <Typewriter
                   onInit={(typewriter) => {
@@ -53,9 +53,8 @@ export default class Banner extends Component {
                   style={
                     !this.props.theme
                       ? {
-                          backgroundColor: "#121212",
-                          borderColor: "#121212",
-                          color: "rgba(211, 211, 211, 0.774)",
+                          backgroundColor: "#1890FF",
+                          color: "#ffffff",
                         }
                       : { backgroundColor: color }
                   }
@@ -68,7 +67,7 @@ export default class Banner extends Component {
                     !this.props.theme
                       ? {
                           backgroundColor: "transparent",
-                          borderColor: "#1817179d",
+                          borderColor: "#ABACAD",
                           color: "rgba(211, 211, 211, 0.774)",
                         }
                       : {}
