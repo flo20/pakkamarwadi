@@ -9,7 +9,7 @@
 - JAVASCRIPT
 
 
-## How to get started❓
+## Get Started
 
 You can refer to [this](https://github.com/firstcontributions/first-contributions) if you are contributing for the first time.
 
