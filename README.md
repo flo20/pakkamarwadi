@@ -1,5 +1,5 @@
 ## Visit website 
- [Portfolio](https://www.pakkamarwadi.tk/).
+ [Portfolio](https://www.pakkamarwadi.tk/)
 
 ## Tech Stack
 
